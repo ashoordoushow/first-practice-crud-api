@@ -1,7 +1,9 @@
 class PhotosController < ApplicationController
     def index
-        photos = Photo.all
-        p photos
-    render json: {name: "fjskdsn"}
+        @photos = Photo.all
+        
+    render "index"
     end
 end
+
+
